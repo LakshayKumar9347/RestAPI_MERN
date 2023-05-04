@@ -14,5 +14,4 @@ const start = async ()=>{
     }
 }
 start()
-connectDB.
 
