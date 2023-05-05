@@ -1,8 +1,13 @@
+const model_Schema = require('../models/index')
+
+
 const getAllProducts = async (req, res) => {
-    res.status(200).json({
-        "msg": "I am getAllProducts"
-    })
+    const mydata = await model_Schema.find()
+    res.status(200).json(mydata )
+
 }
+
+
 const getAllProductsTesting = async (req, res) => {
     res.status(200).json({
         "msg": "I am getAllProductsTesting"
